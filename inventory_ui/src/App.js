@@ -1,4 +1,7 @@
-function App()
-{
-    return <h1>Hellow from App component</h1>
+import React from 'react';
+
+function App() {
+  return <div>App</div>;
 }
+
+export default App;

@@ -1,6 +1,14 @@
-import React from "react"
-import ReactDOM from "react-dom"
-import App from './App'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { ThemeProvider } from 'styled-components';
+import theme from './themes';
+import App from './App';
 
-ReactDOM.render(<h1>Thank you Jesus</h1>,document.getElementById('root'))
+import './App.css';
 
+ReactDOM.render(
+  <ThemeProvider theme={theme}>
+    <App />
+</ThemeProvider>,
+  document.getElementById('root')
+);
